@@ -8,8 +8,8 @@
 h1 {  
     text-align: center;  
     padding: 23px;  
-    background-color: skyblue;  
-    color: white;  
+    background-color:aqua;  
+    color:brown;  
     }  
   
 #clear{  
@@ -17,15 +17,15 @@ width: 270px;
 border: 3px solid gray;  
     border-radius: 3px;  
     padding: 20px;  
-    background-color: red;  
+    background-color: rgb(76, 0, 255);  
 }  
   
 .formstyle  
 {  
 width: 300px;  
-height: 530px;  
+height: 650px;  
 margin: auto;  
-border: 3px solid skyblue;  
+border: 3px solid peru;  
 border-radius: 5px;  
 padding: 20px;  
 }  
@@ -35,8 +35,8 @@ padding: 20px;
 input  
 {  
 width: 20px;  
-background-color: green;  
-color: white;  
+background-color:rgb(65, 61, 57);  
+color:chartreuse;  
 border: 3px solid gray;  
     border-radius: 5px;  
     padding: 26px;  
@@ -64,7 +64,14 @@ border: 5px solid black;
     <!-- This input box shows the button pressed by the user in calculator. -->  
   <input id = "calc" type ="text" name = "answer"> <br> <br>  
   <!-- Display the calculator button on the screen. -->  
-  <!-- onclick() function display the number prsses by the user. -->  
+  <!-- onclick() function display the number prsses by the user. -->
+  
+  <input type = "button" value = "AC" onclick = "form1.answer.value += '  ' ">  
+  <input type = "button" value = "CE" onclick = "form1.answer.value += ' ' ">  
+  <input type = "button" value = "M+" onclick = "form1.answer.value += 'M+' ">  
+   <input type = "button" value = "%" onclick = "form1.answer.value += '.' ">  
+  <br> <br>  
+
   <input type = "button" value = "1" onclick = "form1.answer.value += '1' ">  
   <input type = "button" value = "2" onclick = "form1.answer.value += '2' ">  
   <input type = "button" value = "3" onclick = "form1.answer.value += '3' ">  
@@ -93,6 +100,13 @@ border: 5px solid black;
   <!-- Display the Cancel button and erase all data entered by the user. -->  
   <input type = "button" value = "Clear All" onclick = "form1.answer.value = ' ' " id= "clear" >  
   <br>   
+
+  <script>
+    function percentage(num, per)
+{
+  return (num/100)*per;
+}
+  </script>
     
 </form>  
 </div>  
